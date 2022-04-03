@@ -93,6 +93,7 @@ func (q *listQueue[T]) Peek() T {
 	return q.head.data
 }
 
+// LimitOffer 更新新添加进来的元素
 func (q *listQueue[T]) LimitOffer(val T) {
 	if q.IsFull() {
 		q.Poll()

@@ -46,8 +46,8 @@ func (s *listStack[T]) Push(val T) {
 }
 
 func (s *listStack[T]) Pop() T {
-	var flag T
 	if s.root == nil {
+		var flag T
 		return flag
 	}
 
@@ -58,8 +58,8 @@ func (s *listStack[T]) Pop() T {
 }
 
 func (s *listStack[T]) Peek() T {
-	var flag T
 	if s.root == nil {
+		var flag T
 		return flag
 	}
 	return s.root.data
